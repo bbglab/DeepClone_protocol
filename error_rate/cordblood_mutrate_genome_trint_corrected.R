@@ -9,26 +9,26 @@ library(Biostrings)
 #library(rtracklayer)
 library(data.table)
 
-# TWS_samples <- c("SC001_B1_1_H_1","SC002_B1_1_H_1","SC003_B1_1_H_1")
-# IDT_samples <- c("SC001_B1_1_H_2","SC002_B1_1_H_2","SC003_B1_1_H_2")
-TWS_samples <- c("K_121_1_H_1")
-IDT_samples <- c("K_24_2_H_1")
+TWS_samples <- c("SC001_B1_1_H_1_dupcaller", "SC002_B1_1_H_1_dupcaller", "SC003_B1_1_H_1_dupcaller", "SC001_B1_1_H_1", "SC002_B1_1_H_1", "SC003_B1_1_H_1")
+IDT_samples <- c("SC001_B1_1_H_2_dupcaller", "SC002_B1_1_H_2_dupcaller", "SC003_B1_1_H_2_dupcaller", "SC001_B1_1_H_2", "SC002_B1_1_H_2", "SC003_B1_1_H_2")
 homemade_tests <- c()
+
 nanoseq_samples <- c("PD48442_cordblood_nanoseqv2","PD47269_cordblood_nanoseqv2")
 
 genome_content_json <- "../data/genome_counts_tribases.json"
 
 deepCSA_run <- "2025-12-15"
 add_nanoseq_for_comparison = TRUE #if you want to add cord blood sequenced with Nanoseq for comparison
+
 # root_dir <- "../data/cord_blood_run"
-# root_dir <- "/data/bbg/nobackup2/prominent/duplex_seq_tests/error_rate/cord_blood/bbg/deepCSA/2026-03-19_idt_tws_dupcaller"
-root_dir <- "/data/bbg/nobackup/prominent/kidney/deepCSA/LCMs/exploration/2026-03-14_cleaned_artifacts"
+root_dir <- "/data/bbg/nobackup2/prominent/duplex_seq_tests/error_rate/cord_blood/bbg/deepCSA/2026-03-20_idt_tws_dupcaller_fix"
 deepCSA_run_dir <- root_dir # paste0(root_dir,"deepCSA/", deepCSA_run)
 
 path2sites = paste0( deepCSA_run_dir, "/depths/individual/")
 path2mutations = paste0( deepCSA_run_dir, "/mutations/clean_somatic/")
 consensus_bed <- paste0( deepCSA_run_dir, "/regions/consensuspanels/consensus.all.bed")
-path2out = paste0(root_dir, "/analyses/mutrate_corrected")
+
+path2out = "results/cordblood_mutrate"
 
 get_genome_content <- function(genome_content_json){
   #' Get genome trinucleotide content
@@ -88,7 +88,6 @@ get_mutations_and_sites <- function(path2sites, path2mutations, consensus_bed){
     sample_name = str_split_i(file, ".depths", 1)
     print(sample_name)
     sample_id <- str_split_i(file,"_", 1)
-    experiment_id = str_split_i(sample_name, "_H_", 2)
     protocol <- ifelse(sample_name %in% IDT_samples, "IDT", ifelse(sample_name %in% TWS_samples, "TWS", ifelse(sample_name %in% homemade_tests,"NEB","others")))
     df_sites = get_consensus_sites_depth(sample_name, path2sites, consensus_bed)
     df_sites$depth = as.numeric(df_sites$DEPTH)
@@ -163,7 +162,7 @@ if (!dir.exists(path2out)) {
   dir.create(path2out, recursive = TRUE)
 }
 
-write.csv(result, paste0(path2out,"/mutrates_result_rosana_tests.tsv"),row.names = FALSE, quote = FALSE)
+write.csv(result, paste0(path2out,"/mutrates_results.tsv"),row.names = FALSE, quote = FALSE)
 
 setwd(path2out)
 
