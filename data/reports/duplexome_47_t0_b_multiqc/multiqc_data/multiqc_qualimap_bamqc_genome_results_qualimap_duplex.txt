@@ -1,0 +1,2 @@
+Sample	total_reads	mapped_reads	mapped_paired_reads	mapped_bases	sequenced_bases	duplication_rate	regions_size	regions_mapped_reads	mean_insert_size	median_insert_size	mean_mapping_quality	ns	gc_percentage	general_error_rate	homopolymer_indels	mean_coverage	percentage_aligned	percentage_aligned_on_target
+CHa_47_T0_B_TWS042_10	836387978	836337565	778532010	72229586678	72223985481	81.72	120595501	778574898	217.667	191.0	59.7179	250869326	49.56	0.43	48.73	598.941	99.9939725341198	93.09337886789768
