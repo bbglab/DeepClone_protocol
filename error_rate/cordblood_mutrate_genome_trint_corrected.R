@@ -21,7 +21,7 @@ deepCSA_run <- "2025-12-15"
 add_nanoseq_for_comparison = TRUE #if you want to add cord blood sequenced with Nanoseq for comparison
 
 # root_dir <- "../data/cord_blood_run"
-root_dir <- "/data/bbg/nobackup2/prominent/duplex_seq_tests/error_rate/cord_blood/bbg/deepCSA/2026-03-20_idt_tws_dupcaller_fix"
+root_dir <- "/data/bbg/nobackup2/prominent/duplex_seq_tests/error_rate/cord_blood/bbg/deepCSA/2026-03-26_deepUMIcaller_and_dupcaller_4_paper"
 deepCSA_run_dir <- root_dir # paste0(root_dir,"deepCSA/", deepCSA_run)
 
 path2sites = paste0( deepCSA_run_dir, "/depths/individual/")
