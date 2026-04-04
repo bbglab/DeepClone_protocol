@@ -1,8 +1,8 @@
 # DeepClone Protocol — Figures & Analysis Code
 
-This repository contains the code and data to reproduce the figures presented in the **Nature Protocols** paper:
+This repository contains the code and data to reproduce the figures presented in the **protocols.io** paper:
 
-> **DeepClone: an end-to-end protocol to build DNA duplex sequencing libraries and analyze somatic mutations**
+> **DeepClone, an end-to-end protocol to study somatic mutagenesis and selection at high resolution**
 
 ## Abstract
 
@@ -13,7 +13,7 @@ With the introduction of DNA duplex sequencing technologies, somatic mutations t
 | Repository | Description |
 |---|---|
 | [bbglab/deepUMIcaller](https://github.com/bbglab/deepUMIcaller) | Somatic mutation caller for UMI-based duplex sequencing data |
-| [bbglab/deepCSA](https://github.com/bbglab/deepCSA) | Cohort-level Somatic Analysis pipeline for duplex sequencing |
+| [bbglab/deepCSA](https://github.com/bbglab/deepCSA) | Clonal Structure Analysis pipeline for duplex sequencing data |
 
 ## Repository structure
 
