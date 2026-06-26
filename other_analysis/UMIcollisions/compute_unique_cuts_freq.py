@@ -5,7 +5,12 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 
-cord_blood_samples_list = [# "SC003_B1_1_H_1", "SC002_B1_1_H_1", "SC001_B1_1_H_1",
+# for file in $(ls *_2.sorted.bam | cut -d '.' -f1); do
+# echo $file;
+# python /data/bbg/projects/prominent/protocols/paper_figures/other_analysis/UMIcollisions/compute_unique_cuts_freq.py /data/bbg/nobackup2/prominent/duplex_seq_tests/error_rate/cord_blood/bbg/2026-03-17_tws_idt $file ;
+# done;
+
+cord_blood_samples_list = ["SC003_B1_1_H_1", "SC002_B1_1_H_1", "SC001_B1_1_H_1",
                            "SC003_B1_1_H_2", "SC002_B1_1_H_2", "SC001_B1_1_H_2"]
 
 sample = sys.argv[1]
