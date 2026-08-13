@@ -1,0 +1,15 @@
+a)
+Cord_Blood_3_bufferR1_1
+/data/bbg/nobackup2/prominent/duplex_seq_tests/technology_tests/rosana_data/2025-11-03.tests/2025-11-04_deepUMIcaller/familymetricsontarget/Cord_Blood_3_bufferR1_1.on_target.family_sizes_plot_n_stats.duplex.pdf
+
+b)
+SC003_B1_1_H_2
+/data/bbg/nobackup2/prominent/duplex_seq_tests/error_rate/cord_blood/bbg/2026-03-17_tws_idt/metrics/duplex/familymetricsontarget/SC003_B1_1_H_2.on_target.family_sizes_plot_n_stats.duplex.pdf
+
+c) (missing) the sample was resequenced and we lost that plot
+IA026_A_1_H_4
+/data/bbg/nobackup2/prominent/anal_brushes/deepUMI/2025-11-19_novogene75_AB_DU3
+
+d)
+B_7_1_H_1
+/data/bbg/nobackup/prominent/fanconi_anemia/deepUMIcaller/2025-11-18_NOV64and65_FA_parallelmain/familymetricsontarget/B_7_1_H_1.on_target.family_sizes_plot_n_stats.duplex.pdf
