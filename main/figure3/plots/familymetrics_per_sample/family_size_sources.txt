@@ -9,6 +9,9 @@ SC003_B1_1_H_2
 c) (missing) the sample was resequenced and we lost that plot
 IA026_A_1_H_4
 /data/bbg/nobackup2/prominent/anal_brushes/deepUMI/2025-11-19_novogene75_AB_DU3
+did a rerun to get these file
+/scratch/bbg/scratch/test_runs/2026-08-14_anal_brushes_panel_c/metrics/duplex/familymetricsontarget/IA024_A_1_H_2.on_target.family_sizes_plot_n_stats.duplex.pdf
+
 
 d)
 B_7_1_H_1
